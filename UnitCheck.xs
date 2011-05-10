@@ -8,8 +8,6 @@ int _add_cv_to_reqd(CV *cv);
 /* work out which function to really call, ifdefs probably sensible here */
 #if (PERL_VERSION >= 9 && PERL_SUBVERSION >= 5) \
   || (PERL_VERSION >= 10)
-/* PL_unitcheckav isn't a #define unless usemultiplicity is enabled
-  #ifdef PL_unitcheckav */
 /* We have a UNITCHECK to use, as we're getting called thus:
 COMPILATION UNIT:
 some code
